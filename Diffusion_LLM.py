@@ -376,7 +376,7 @@ def main():
     
     if user_input:
         st.session_state.messages.append({"role": "user", "content": user_input})
-        st.experimental_rerun()
+        st.rerun()
     
     # Process the last user message if it exists
     if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
